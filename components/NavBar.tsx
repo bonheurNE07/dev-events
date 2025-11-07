@@ -1,0 +1,27 @@
+import Image from "next/image"
+import Link from "next/link"
+const NavBar = () => {
+  return (
+    <header>
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
+            <Link href="/" className="logo">
+                <Image 
+                src="/icons/logo.png"
+                alt="logo"
+                width={24}
+                height={24}
+                />
+
+                <p>DevEvent</p>
+            </Link>
+            <ul>
+                <Link href={"/"}>Home</Link>
+                <Link href={"/"}>Events</Link>
+                <Link href={"/"}>Create Event</Link>
+            </ul>
+        </nav>
+    </header>
+  )
+}
+
+export default NavBar
