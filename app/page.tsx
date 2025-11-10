@@ -17,7 +17,7 @@ export default function Page() {
 
         <ul className="events">
           {events.map((event) => (
-            <li key={event.title} className="event-card">
+            <li key={event.title} className="event-card list-none">
               <EventCard {...event} /> 
             </li>
           ))}
